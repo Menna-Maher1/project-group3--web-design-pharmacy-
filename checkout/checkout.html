@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Meds Header</title>
+    <!-- Bootstrap 5.3.8 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+    <div class="container py-3">
+        <div class="row align-items-center justify-content-between">
+            
+            <!-- Logo Section -->
+            <div class="col-3">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo" class="img-fluid">
+                </a>
+            </div>
+
+            <!-- Search Bar Section -->
+            <div class="col-5">
+                <div class="input-group rounded-pill border shadow-sm bg-white overflow-hidden">
+                    <span class="input-group-text bg-transparent border-0 ps-4 text-secondary opacity-75">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" class="form-control border-0 shadow-none bg-transparent text-secondary opacity-75" placeholder="Search for products">
+                </div>
+            </div>
+
+            <!-- Right Links & Support Section -->
+            <div class="col-4 d-flex align-items-center justify-content-end gap-3">
+                
+                <!-- Cart Icon -->
+                <div class="position-relative">
+                    <a href="#" class="fs-4 text-decoration-none text-primary">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle p-1 bg-dark border border-light rounded-circle"></span>
+                    </a>
+                </div>
+
+                <!-- Language Dropdown -->
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle fw-bold border-0 shadow-none bg-transparent px-1 text-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        EN
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">العربية</a></li>
+                    </ul>
+                </div>
+
+                <!-- My Account -->
+                <div>
+                    <a href="#" class="text-decoration-none d-flex align-items-center gap-1 text-primary">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="fw-semibold small">My Account</span>
+                    </a>
+                </div>
+
+                <!-- Sales & Service Support -->
+                <div class="d-flex align-items-center gap-2 ps-3">
+                    <i class="fa-solid fa-phone fs-3 text-primary"></i>
+                    <div class="d-flex flex-column lh-sm">
+                      <span class="fw-bold text-primary support-text">Sales & Service Support</span>
+                      <span class="fw-bold text-primary phone-number">021 3441122</span>  
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-custom-topbar text-white py-2 px-3">
+        <div class="container d-flex justify-content-center align-items-center gap-4">
+            <div class="small">
+                For better Shopping Experience, <strong>download the App Now!</strong>
+            </div>
+            <div class="d-flex align-items-center gap-3 small">
+                <span><i class="fa-brands fa-apple"></i> 4.6</span>
+                <span class="text-secondary opacity-50">|</span>
+                <span><i class="fa-brands fa-google-play"></i> 4.8</span>
+            </div>
+        </div>
+    </div>
+
+   <nav class="navbar navbar-expand-lg main-navbar p-0 shadow-sm" style="background: #0077B6;">
+    <div class="container">
+        <!-- زر القائمة للشاشات الصغيرة -->
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- محتوى النافبار بالكامل -->
+        <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarMenu">
+            
+            <!-- روابط الصفحات الأساسية -->
+            <ul class="navbar-nav d-flex align-items-center gap-2 mb-2 mb-lg-0" style="font-size: 12px;">
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Home/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../category page/category.html">Category Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../checkout/checkout.html">Checkout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Terms&Condition/index.html">Terms&Condition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../products/index.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Product Page/index.html">Product Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Shop by Brand/index.html">Shop by brands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Cart/index.html">
+                        <i class="fa-solid fa-cart-shopping me-1"></i>Cart
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Contact page/index.html">
+                        <i class="fa-solid fa-envelope me-1"></i>Contact page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../FAQs/index.html">
+                        <i class="fa-solid fa-clipboard-question me-1"></i>FAQS
+                    </a>
+                </li>
+            </ul>
+
+            <!-- جزئية Brands و Offers المضافة لليمين -->
+            <div class="d-flex align-items-center gap-3">
+                <div class="vr bg-white opacity-50 mx-1" style="height: 20px;"></div>
+                <a href="../Shop by Brand/index.html" class="text-white text-decoration-none d-flex align-items-center gap-2 small fw-semibold">
+                    <i class="fa-solid fa-asterisk"></i> Shop By Brands
+                </a>
+                <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2 small fw-semibold">
+                    <i class="fa-solid fa-tag"></i> OFFERS
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+        
+            
+          
+
+            
+
+    <div class="container-fluid bg-checkout-gradient d-flex justify-content-center align-items-center text-white py-4">
+        <div class="text-center">
+            <h1 class="fw-bold m-0">Checkout</h1>
+            <hr class="border-2 opacity-100 w-50 mx-auto mt-1 mb-0">
+        </div>
+    </div>
+
+    <div class="container py-2">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0" style="--bs-breadcrumb-divider: '>';">
+                <li class="breadcrumb-item"><a href="../Home/index.html" class="text-decoration-none text-muted">Home</a></li>
+                <li class="breadcrumb-item"><a href="../Cart/index.html" class="text-decoration-none text-muted">My Cart</a></li>
+                <li class="breadcrumb-item active text-primary fw-semibold" aria-current="page">Checkout</li>
+            </ol>
+        </nav>
+    </div>
+    <hr class="text-muted opacity-25 my-2 mx-auto" style="width: 82%;">
+
+    <!-- Main Checkout Grid Section -->
+    <div class="container my-5">
+        <div class="row g-4">
+            
+            <!-- العمود الأول (اليسار): نموذج الفوترة وطريقة الدفع -->
+            <div class="col-lg-7">
+                
+                <!-- Billing Address Section -->
+                <div class="card p-4 border rounded-3 shadow-sm mb-4">
+                    <h4 class="mb-4 fw-bold">Billing Address</h4>
+                    <form id="billingForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name" value="Alex">
+                                    <label for="firstName">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="Driver">
+                                    <label for="lastName">Last Name</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" value="username@gmail.com">
+                            <label for="emailAddress">Email Address</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="streetAddress1" placeholder="Street Address">
+                            <label for="streetAddress1">Street Address</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="streetAddress2" placeholder="Street Address 2">
+                            <label for="streetAddress2">Street Address 2</label>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div class="form-floating">
+                                    <select class="form-select" id="stateSelect">
+                                        <option selected>California</option>
+                                        <option value="1">New York</option>
+                                        <option value="2">Texas</option>
+                                    </select>
+                                    <label for="stateSelect">State/Province</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="cityName" placeholder="City" value="San Diego">
+                                    <label for="cityName">City</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="zipCode" placeholder="Zip/Postal Code" value="22434">
+                                    <label for="zipCode">Zip/Postal Code</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone" value="+123 456 789 111">
+                                    <label for="phoneNumber">Phone</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="sameAddressCheck" checked>
+                            <label class="form-check-label text-secondary" for="sameAddressCheck">
+                                My billing and shipping address are the same
+                            </label>
+                        </div>
+                        
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="createAccountCheck">
+                            <label class="form-check-label text-secondary" for="createAccountCheck">
+                                Create an account for later use
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Payment Method Section -->
+                <div class="card p-4 border rounded-3 shadow-sm">
+                    <h4 class="mb-4 fw-bold">Payment Method</h4>
+
+                    <!-- COD Option -->
+                    <div class="card p-3 mb-3 border rounded-2">
+                        <div class="form-check d-flex align-items-center">
+                            <input class="form-check-input mt-0" type="radio" name="paymentMethod" id="codCheck">
+                            <label class="form-check-label ms-3 d-flex w-100 justify-content-between align-items-center" for="codCheck">
+                                <span class="fw-bold">COD</span>
+                                <span class="text-secondary small">Pay with cash on delivery</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Credit Card Option -->
+                    <div class="card p-4 border rounded-3 mb-3" id="creditCardContainer">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="ccCheck" checked>
+                                <label class="form-check-label fw-bold text-dark" for="ccCheck">
+                                    Pay with Credit Card
+                                </label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-brands fa-cc-visa fs-4 text-primary"></i>
+                                <i class="fa-brands fa-cc-discover fs-3 text-secondary"></i>
+                                <i class="fa-brands fa-cc-mastercard fs-3 text-danger"></i>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="cardNumber" placeholder="Card number" value="1234 5678 9101 3456">
+                                    <label for="cardNumber">Card number</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="expiryDate" placeholder="Expiration Date" value="MM/YY">
+                                    <label for="expiryDate">Expiration Date</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="secCode" placeholder="Card Security Code" value="***">
+                                    <label for="secCode">Card Security Code</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                                <a href="#" class="text-decoration-none small text-primary">What is this?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center text-secondary small mt-2">
+                        <i class="fa-solid fa-lock text-primary me-2 fs-5"></i>
+                        <span>We protect your payment information using encryption to provide bank-level security.</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- العمود الثاني (اليمين): Order Review والملخص -->
+            <div class="col-lg-5">
+                
+                <!-- Order Review Box -->
+                <div class="card p-4 border rounded-3 shadow-sm mb-4 sticky-top" style="top: 20px; z-index: 5;">
+                    <div class="d-flex justify-content-between align-items-center mb-1" data-bs-toggle="collapse" data-bs-target="#orderReviewCollapse" role="button" aria-expanded="true">
+                        <h5 class="fw-bold m-0">Order Review</h5>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <p class="text-secondary small mb-4">3 items in card</p>
+
+                    <div class="collapse show" id="orderReviewCollapse">
+                        <!-- Item 1 -->
+                        <div class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-light border rounded-3 d-flex justify-content-center align-items-center p-3">
+                                    <i class="fa-solid fa-box text-secondary fs-4"></i>
+                                </div>
+                                <div>
+                                    <p class="small mb-1 fw-semibold">Amet nunc, tincidunt<br>interdum rhoncus massa</p>
+                                    <div class="d-inline-flex align-items-center border rounded px-2 py-1">
+                                        <button class="btn btn-sm p-0 border-0">-</button>
+                                        <span class="px-2 small">2</span>
+                                        <button class="btn btn-sm p-0 border-0">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <span class="text-secondary text-decoration-line-through small d-block">$245,78</span>
+                                <span class="fw-bold">$245,78</span>
+                                <i class="fa-solid fa-xmark text-secondary ms-3 cursor-pointer"></i>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-light border rounded-3 d-flex justify-content-center align-items-center p-3">
+                                    <i class="fa-solid fa-box text-secondary fs-4"></i>
+                                </div>
+                                <div>
+                                    <p class="small mb-1 fw-semibold">Amet nunc, tincidunt<br>interdum rhoncus massa</p>
+                                    <div class="d-inline-flex align-items-center border rounded px-2 py-1">
+                                        <button class="btn btn-sm p-0 border-0">-</button>
+                                        <span class="px-2 small">2</span>
+                                        <button class="btn btn-sm p-0 border-0">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <span class="text-secondary text-decoration-line-through small d-block">$245,78</span>
+                                <span class="fw-bold">$245,78</span>
+                                <i class="fa-solid fa-xmark text-secondary ms-3 cursor-pointer"></i>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-light border rounded-3 d-flex justify-content-center align-items-center p-3">
+                                    <i class="fa-solid fa-box text-secondary fs-4"></i>
+                                </div>
+                                <div>
+                                    <p class="small mb-1 fw-semibold">Amet nunc, tincidunt<br>interdum rhoncus massa</p>
+                                    <div class="d-inline-flex align-items-center border rounded px-2 py-1">
+                                        <button class="btn btn-sm p-0 border-0">-</button>
+                                        <span class="px-2 small">2</span>
+                                        <button class="btn btn-sm p-0 border-0">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <span class="text-secondary text-decoration-line-through small d-block">$245,78</span>
+                                <span class="fw-bold">$245,78</span>
+                                <i class="fa-solid fa-xmark text-secondary ms-3 cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discount Codes Box -->
+                <div class="card p-4 border rounded-3 shadow-sm mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3" data-bs-toggle="collapse" data-bs-target="#discountCollapse" role="button" aria-expanded="true">
+                        <h5 class="fw-bold m-0">Discount Codes</h5>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="collapse show" id="discountCollapse">
+                        <div class="form-floating position-relative">
+                            <input type="text" class="form-control pe-5" id="discountInput" placeholder="Enter your coupon code" value="XRTMAS70">
+                            <label for="discountInput">Enter your coupon code</label>
+                            <span class="position-absolute top-50 end-0 translate-middle-y pe-3" style="z-index: 5;">
+                                <i class="fa-solid fa-circle-check text-primary fs-5"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Billing Summary Section (تم نقله إلى داخل العمود الأيمن هنا) -->
+                <div class="card p-4 border rounded-3 shadow-sm mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3" data-bs-toggle="collapse" data-bs-target="#summaryCollapse" role="button" aria-expanded="true">
+                        <h5 class="fw-bold m-0">Billing Summary</h5>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+
+                    <div class="collapse show" id="summaryCollapse">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-secondary">Subtotal</span>
+                            <span class="fw-semibold" id="subtotalAmount">$737.34</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2 text-success">
+                            <span>Discount</span>
+                            <span id="discountAmount">-$50.00</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div>
+                                <span class="text-secondary">Warranty (Platinum)</span>
+                                <a href="#" class="d-block text-decoration-none small text-primary" id="removeWarranty">Remove</a>
+                            </div>
+                            <span class="fw-semibold">$259.99</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-secondary">Shipping</span>
+                            <span class="fw-semibold">$0.00</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-secondary">Tax</span>
+                            <span class="fw-semibold">$228.72</span>
+                        </div>
+
+                        <hr class="text-muted opacity-25 my-3">
+
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <span class="fw-bold fs-5 text-dark">Grand Total</span>
+                            <span class="fw-bold fs-5 text-primary" id="grandTotal">$976.05</span>
+                        </div>
+
+                        <!-- Order Comment -->
+                        <div class="mb-3">
+                            <label for="orderComment" class="form-label text-secondary small">Order Comment</label>
+                            <textarea class="form-control shadow-none" id="orderComment" rows="2" placeholder="Type here..."></textarea>
+                        </div>
+
+                        <!-- Terms Checkbox -->
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="termsCheck" checked>
+                            <label class="form-check-label text-secondary small" for="termsCheck">
+                                Please check to acknowledge our <a href="#" class="text-decoration-none text-primary">Privacy & Terms Policy</a>
+                            </label>
+                        </div>
+
+                        <!-- Pay Button -->
+                        <button type="button" class="btn btn-primary w-100 py-2 fw-bold shadow-sm" id="payBtn">
+                            Pay $976.05
+                        </button>
+
+                        <!-- Security Badge -->
+                        <div class="text-center mt-3">
+                            <div class="d-inline-flex align-items-center gap-1 text-secondary small">
+                                <i class="fa-solid fa-shield-halved text-warning fs-5"></i>
+                                <span class="fw-bold text-dark">Norton</span> <span class="text-muted" style="font-size: 11px;">Security Checkout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- نهاية العمود الثاني -->
+
+
+             <section class="footer1 py-5 position-relative ">
+  <div class="join bg-white shadow rounded-4 text-center pt-5 position-absolute  " style="max-width: 800px; height: 300px; margin-left: 30%;">
+    <h1>Join Our Newsletter</h1>
+    <P class="text-secondary mb-5 mt-5 ps-5 pe-5">Join over half a million vitamin lovers and get our latest deals,articles, and resources!</P>
+    <div class="d-flex justify-content-center">
+          <input type="email" class="form-control" placeholder="Enter your email" style="max-width: 300px;">
+          <button class="btn btn-primary px-4">Subscribe</button>
+        </div>
+  </div>
+</section>
+
+            <!-- footer -->
+<footer class="bg-info-subtle " style=" margin-top:12%; padding-top:9% ;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <p class=" mb-3">
+          SereneMeds - Corporate Office<br>
+          Marasi Dr - Business Bay<br>
+          Bay Square
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Who We Are</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">About SereneMeds</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Contact Us</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Latest News</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Store Locator</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Our Policies</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Refund Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Shipping Terms</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Privacy Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Useful Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Browse by Brand</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Browse by Category</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Offers / Coupons</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-column gap-2" style="width: 15%; padding-top: 3%;">
+        <a href="#" class="btn bg-dark text-white btn-sm">
+        <i class="fa-brands fa-google-play me-1"></i> Google Play </a>
+        <a href="#" class="btn bg-dark text-white btn-sm">
+          <i class="fa-brands fa-apple me-1"></i> App Store
+        </a>
+      </div>
+    </div>
+
+    <hr class="my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-body-secondary">
+      <p class="mb-2 mb-md-0"> 2025 SereneMeds. All Rights Reserved.</p>
+      <div class="d-flex gap-2">
+        <i class="fa-brands fa-cc-visa fs-1"></i>
+        <i class="fa-brands fa-cc-mastercard fs-1"></i>
+        <i class="fa-brands fa-cc-paypal fs-1"></i>
+      </div>
+    </div>
+  </div>
+</footer> 
+           
+
+    <!-- Bootstrap 5.3.8 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
