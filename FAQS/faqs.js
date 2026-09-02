@@ -15,3 +15,17 @@ function toggleFaq(el){
     icon.classList.add('fa-minus');
   }
 }
+document.addEventListener('DOMContentLoaded', function () {
+  const subscribeBtn = document.querySelector('.join .btn-primary');
+  const emailInput = document.querySelector('.join input[type="email"]');
+
+  if (subscribeBtn && emailInput) {
+    subscribeBtn.addEventListener('click', function () {
+      if (emailInput.value.trim() === '') {
+        alert('please enter your email');
+      } else {
+        alert('please enter your email');
+      }
+    });
+  }
+});
