@@ -26,3 +26,22 @@ categories.forEach(function(category) {
     });
 
 });
+
+let cartItems = 0;
+
+const addCartBtns = document.querySelectorAll(".add-cart-btn");
+const cartCount = document.getElementById("cartCount");
+
+addCartBtns.forEach(function (btn) {
+
+    btn.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        cartItems++;
+
+        cartCount.textContent = cartItems;
+
+    });
+
+});
