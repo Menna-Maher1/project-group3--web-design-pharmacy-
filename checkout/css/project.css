@@ -1,0 +1,47 @@
+:root {
+    --bs-body-font-family: 'Karla', sans-serif;
+}
+
+.text-primary {
+    color: #0bb5e0 !important; 
+}
+
+.support-text {
+    font-size: 11px;
+}
+
+.phone-number {
+    font-size: 13px;
+}
+
+/* كلاس مخصص للخلفية الأزرق الغامق والشريط السفلي */
+.bg-custom-topbar {
+    background-color: #03045E;
+}
+
+.bg-custom-pharmacy {
+    background-color: #0077B6;
+}
+
+.bg-checkout-gradient {
+    background: linear-gradient(0deg, var(--bs-primary) 51%, #38b6ff 100%);
+    min-height: 200px;
+}
+
+/* التأكد من عدم وجود أي overflow خفي يعطل الالتصاق في الصفحة كلها */
+html, body {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+}
+
+/* إجبار الأب المباشر للـ sticky على السماح بالحركة */
+.row {
+    align-items: flex-start !important;
+    position: relative !important;
+}
+
+/* إجبار عمود الريفيو نفسه على الالتصاق وتجنب أي تعارض في الارتفاع */
+.col-lg-5 {
+    position: relative;
+    height: auto;
+}
