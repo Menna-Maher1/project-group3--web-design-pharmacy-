@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Serif", sans-serif;
+}
+body {
+    color: #2f4b5b;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.color {
+    color: #2f7187;
+}
+#cartCount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #08708c;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-text p {
+    color: #2c7189;
+    font-size: 12px;
+    margin: 0;
+    font-weight: bold;
+}
+.nav-link:hover {
+    background-color: #66c1dc;
+}
+.hero-line {
+    width: 115px;
+    height: 2px;
+    margin: 10px auto ;
+}
+.breadcrumb-section {
+    padding: 15px 0;
+}
+.breadcrumb-section span {
+    color: #2f7187;
+}
+.brand-card {
+    transition: 0.3s;
+}
+.brand-card:hover {
+    transform: translateY(-6px);
+}
+.newsletter-box {
+    width: 520px;
+    max-width: 95%;
+}
+.newsletter-box input {
+    padding: 10px 15px;
+    width: 200px;
+    font-size: 10px;
+    outline: none;
+}
+.newsletter-box button {
+    padding: 0 20px;
+    font-size: 10px;
+}
+.social-icons a {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #385a6a;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

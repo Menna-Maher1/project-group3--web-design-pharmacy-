@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQs - SereneMeds</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="faqs.css">
+<script src="faqs.js"></script>
+
+</head>
+<body>
+
+  <div class="top-header">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap py-2">
+    <a href="#" class="brand-font fs-3 fw-bold text-decoration-none d-flex align-items-center gap-2" style="color:var(--navy-mid);">
+      <i class="fa-solid fa-heart-pulse"></i> SERENE<span style="color:var(--teal-1);">MEDS</span>
+    </a>
+    <div class="search-wrap flex-grow-1 mx-4">
+      <div class="input-group">
+        <span class="input-group-text bg-white border-end-0"><i class="fa-solid fa-magnifying-glass text-secondary"></i></span>
+        <input type="text" class="form-control border-start-0" placeholder="Search for products">
+      </div>
+    </div>
+    <div class="d-flex align-items-center gap-4">
+      <a class="text-decoration-none text-dark small" href="#">EN <i class="fa-solid fa-chevron-down"></i></a>
+      <a href="#" class="text-decoration-none text-dark small d-flex align-items-center gap-1">
+        <i class="fa-regular fa-user"></i> My Account
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <i class="fa-solid fa-headset fs-4" style="color:var(--teal-1);"></i>
+        <div class="small lh-1">
+          <div class="text-secondary" style="font-size:.7rem;">Sales &amp; Service Support</div>
+          <div class="fw-bold">021 3441122</div>
+        </div>
+      </div>
+      <a href="#" class="text-dark fs-5 text-decoration-none">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="topbar">
+  <div class="container d-flex justify-content-center align-items-center text-center">
+    <span>For a better shopping experience, download the app now!</span>
+    <span class="store-badges ms-2">
+      <a href="#"><i class="fa-brands fa-apple"></i></a>
+      <a href="#"><i class="fa-brands fa-google-play"></i></a>
+    </span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg main-navbar p-0" style="background: #0077B6;">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mx-auto d-flex justify-content-between gap-2" style="font-size: 12px; padding: 5px 10px;">
+        <li class="nav-item"> <a class="nav-link text-light" href="../Home/Home.html">Home</a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../category page/category.html">Category Page</a> </li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../checkout/checkout.html">Checkout</a> </li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../terms&condition/terms.html">Terms&Condition</a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../products/project.html">Products</a> </li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../Product Page/index.html">Product Page </a> </li>
+        <li class="nav-item border-end border-secondary"> <a class="nav-link text-light" href="../Shop by Brand/index.html">Shop by brands </a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../cart/cart.html"> <i class="fa-solid fa-cart-shopping pe-2"></i>Cart</a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../Contact page/contact.html"> <i class="fa-solid fa-envelope pe-2"></i>Contact page </a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../FAQS/faqs.html"> <i class="fa-solid fa-clipboard-question pe-2"></i>FAQS </a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <h1>FAQs</h1>
+  <div class="rule"></div>
+</section>
+
+<div class="container">
+  <div class="breadcrumb-row">
+    <a href="#">Home</a> <span class="mx-1">&gt;</span> <span>FAQs</span>
+  </div>
+
+  <div class="row mt-4 pt-2">
+    <div class="col-lg-6">
+
+      <div class="faq-item active">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>What is SereneMeds?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>SereneMeds is an online pharmacy and health marketplace where you can order medicines, wellness products, and everyday healthcare essentials, then have them delivered straight to your door.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Do you only sell medicine?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Not at all. Alongside medicines, we carry beauty care, sports nutrition, supplements, personal care, and mother &amp; baby products.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>How is SereneMeds different from others?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>We combine licensed pharmacist support, fast delivery, and transparent pricing, so you always know what you're getting and when it will arrive.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Can pharmacies &amp; hospitals use your services?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, we offer bulk ordering and dedicated support for pharmacies, clinics, and hospitals. Reach out to our business team to get set up.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Does SereneMeds provide pharmacist Counseling?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely. Our licensed pharmacists are available to answer questions about dosage, interactions, and general medication guidance.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Do you provide any free test services?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Select locations offer complimentary basic health screenings, such as blood pressure and glucose checks. Availability varies by branch.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-6">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Where is SereneMeds located?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Our corporate office is at Marasi Dr, Business Bay, Bay Square, with delivery partners covering multiple cities.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>How do I cancel my order?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Go to My Orders in your account, select the order, and tap Cancel. Orders already out for delivery can't be cancelled online, contact support instead.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>How can I place my order?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Browse or search for a product, add it to your cart, upload a prescription if required, and check out with your preferred payment method.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>How can I track my order?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Once your order ships, you'll get a tracking link by SMS and email. You can also check live status under My Orders.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Can I change my order details? (address/items)</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>You can edit your address or items within 30 minutes of placing an order, after that, please contact our support team for help.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Do you have any stores across Pakistan?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, we have physical branches in major cities. Use our Store Locator to find the one closest to you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>How do I upload my prescription?</h3>
+          <button class="faq-toggle"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="faq-answer">
+          <p>During checkout, tap Upload Prescription and choose a clear photo or PDF. Our pharmacist will verify it before dispatch.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<section class="footer1 py-5 position-relative ">
+  <div class="join bg-white shadow rounded-4 text-center pt-5 position-absolute  " style="max-width: 800px; height: 300px; margin-left: 30%;">
+    <h1>Join Our Newsletter</h1>
+    <P class="text-secondary mb-5 mt-5 ps-5 pe-5">Join over half a million vitamin lovers and get our latest deals,articles, and resources!</P>
+    <div class="d-flex justify-content-center">
+          <input type="email" class="form-control" placeholder="Enter your email" style="max-width: 300px;">
+          <button class="btn btn-primary px-4">Subscribe</button>
+        </div>
+  </div>
+</section>
+
+
+<footer class="bg-info-subtle " style=" margin-top:12%; padding-top:9% ;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <p class=" mb-3">
+          SereneMeds - Corporate Office<br>
+          Marasi Dr - Business Bay<br>
+          Bay Square
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Who We Are</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">About SereneMeds</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Contact Us</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Latest News</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Our Policies</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Refund Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Shipping Terms</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Privacy Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Useful Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Browse by Brand</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Browse by Category</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Offers / Coupons</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-column gap-2" style="width: 15%; padding-top: 3%;">
+        <a href="#" class="b

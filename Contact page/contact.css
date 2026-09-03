@@ -1,0 +1,300 @@
+:root{
+  --navy-dark: navy;
+  --navy: navy;
+  --navy-mid: royalblue;
+  --teal-1: teal;
+  --teal-2: turquoise;
+  --ink: darkblue;
+  --muted: gray;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink);
+  background:white;
+}
+
+h1,h2,h3,h4,.brand-font{
+  font-family: 'Playfair Display', serif;
+}
+
+.site-header{
+  background:white;
+  border-bottom:1px solid whitesmoke;
+}
+.site-header .logo{
+  font-size:1.4rem;
+  color: var(--ink);
+  white-space:nowrap;
+}
+.site-header .logo i{
+  color: var(--teal-1);
+  font-size:1.5rem;
+}
+.header-search{
+  position:relative;
+  max-width:520px;
+}
+.header-search i{
+  position:absolute;
+  left:16px; top:50%;
+  transform:translateY(-50%);
+  color:lightgray;
+  font-size:.85rem;
+}
+.header-search input{
+  width:100%;
+  border:1px solid lightgray;
+  background:whitesmoke;
+  border-radius:999px;
+  padding:.65rem 1rem .65rem 2.4rem;
+  font-size:.85rem;
+  outline:none;
+}
+.header-search input:focus{
+  border-color: var(--teal-1);
+  background:white;
+}
+.header-actions{
+  font-size:.85rem;
+  white-space:nowrap;
+}
+.dropdown-lang{
+  color: var(--ink);
+  cursor:pointer;
+}
+.header-link{
+  color: var(--ink);
+}
+.header-link i{
+  color: var(--navy-mid);
+  margin-right:4px;
+}
+.support-link{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+.support-link i{
+  font-size:1.3rem;
+  color: var(--teal-1);
+}
+.support-link small{
+  display:block;
+  color: var(--muted);
+  font-size:.7rem;
+}
+.support-link strong{
+  display:block;
+  color: var(--ink);
+  font-size:.9rem;
+}
+.cart-link{
+  position:relative;
+  color: var(--ink);
+  font-size:1.2rem;
+}
+.cart-dot{
+  position:absolute;
+  top:-4px; right:-6px;
+  width:9px; height:9px;
+  border-radius:50%;
+  background: var(--teal-1);
+  border:2px solid white;
+}
+
+.topbar{
+  background: var(--navy-dark);
+  color:lightgray;
+  font-size:.8rem;
+  padding:6px 0;
+}
+.topbar a{color:lightgray; text-decoration:none; margin-left:10px;}
+.topbar .store-badges i{font-size:1.1rem; margin-left:6px;}
+
+.navbar-serene{
+  background: linear-gradient(90deg, var(--navy) 0%, var(--navy-mid) 100%);
+}
+.navbar-serene .nav-link{
+  color:white !important;
+  font-size:.92rem;
+  font-weight:500;
+  padding:.9rem .85rem !important;
+}
+.navbar-serene .nav-link:hover{ color:turquoise !important; }
+.navbar-serene .nav-divider{
+  width:1px; background:rgba(255,255,255,.18); margin:8px 4px;
+}
+
+.page-hero{
+  background: linear-gradient(120deg, var(--navy-mid) 0%, var(--teal-1) 55%, var(--teal-2) 100%);
+  padding: 3.2rem 0 3.6rem;
+  text-align:center;
+  color:white;
+}
+.page-hero h1{
+  font-weight:700;
+  letter-spacing:.5px;
+  margin-bottom:.6rem;
+}
+.page-hero .rule{
+  width:64px; height:3px; background:white; opacity:.85;
+  margin:0 auto;
+}
+
+.breadcrumb-row{
+  font-size:.85rem;
+  color: var(--muted);
+  padding-top: 1.6rem;
+}
+.breadcrumb-row a{ color: var(--teal-1); text-decoration:none; font-weight:500;}
+
+.faq-item{
+  border-bottom:1px solid lightgray;
+  padding: 1.15rem 0;
+}
+.faq-question{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+  gap:1rem;
+}
+.faq-question h3{
+  font-family:'Poppins',sans-serif;
+  font-size:1rem;
+  font-weight:600;
+  color: var(--ink);
+  margin:0;
+}
+.faq-toggle{
+  flex:0 0 auto;
+  width:30px; height:30px;
+  border-radius:6px;
+  border:none;
+  display:flex; align-items:center; justify-content:center;
+  background:whitesmoke;
+  color: var(--navy-mid);
+  font-size:.8rem;
+  transition: background .15s ease, color .15s ease;
+}
+.faq-item.active .faq-toggle{
+  background: var(--navy-mid);
+  color:white;
+}
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition: max-height .25s ease;
+}
+.faq-item.active .faq-answer{
+  max-height: 200px;
+}
+.faq-answer p{
+  color: var(--muted);
+  font-size:.92rem;
+  line-height:1.6;
+  margin: .85rem 0 0;
+  padding-right: 2.2rem;
+}
+
+.contact-form-wrap{
+  max-width: 980px;
+  margin: 0 auto;
+}
+.contact-form-wrap .form-floating input,
+.contact-form-wrap .form-floating textarea{
+  border:1px solid lightgray;
+  border-radius:10px;
+  font-size:.92rem;
+}
+.contact-form-wrap .form-floating input:focus,
+.contact-form-wrap .form-floating textarea:focus{
+  border-color: var(--teal-1);
+  box-shadow: 0 0 0 .15rem rgba(15,179,201,.15);
+}
+.contact-form-wrap .form-floating label{
+  color: var(--muted);
+  font-size:.92rem;
+}
+.btn-submit{
+  background: var(--navy-mid);
+  color:white;
+  border:none;
+  padding:.75rem 2.2rem;
+  border-radius:8px;
+  font-weight:600;
+  letter-spacing:.4px;
+  font-size:.85rem;
+  text-transform:uppercase;
+}
+.btn-submit:hover{
+  background: var(--teal-1);
+  color:white;
+}
+
+.contact-info-wrap{
+  max-width: 1050px;
+  margin: 5rem auto 4rem;
+}
+.contact-info-wrap h2{
+  font-weight:700;
+  color: var(--ink);
+}
+.map-frame{
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid lightgray;
+  box-shadow: 0 10px 25px rgba(16,35,63,.06);
+}
+.map-frame img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  display:block;
+}
+.contact-details{
+  margin:0;
+}
+.contact-details li{
+  display:flex;
+  align-items:flex-start;
+  gap:.8rem;
+  margin-bottom:1.3rem;
+  font-size:.95rem;
+  color: var(--ink);
+}
+.contact-details i{
+  width:38px; height:38px;
+  flex:0 0 auto;
+  border-radius:50%;
+  background:whitesmoke;
+  color: var(--navy-mid);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:.9rem;
+}
+
+
+.join{
+  border: 1px solid whitesmoke;
+}
+.join .btn-primary{
+  background: var(--navy-mid);
+  border-color: var(--navy-mid);
+}
+.join .btn-primary:hover{
+  background: var(--teal-1);
+  border-color: var(--teal-1);
+}
+
+footer a:hover{ color: var(--teal-1) !important; }
+footer h6{ color: var(--ink); }
+
+@media (max-width: 767.98px){
+  .join{ margin-left:auto !important; margin-right:auto !important; left:0; right:0; }
+  .footer1{ padding-bottom: 2rem; }
+  .site-header .header-search{ order:3; max-width:100%; }
+  .support-link span small{ display:none; }
+}

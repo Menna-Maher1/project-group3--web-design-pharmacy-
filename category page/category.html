@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Meds Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+    <div class="container py-3">
+        <div class="row align-items-center justify-content-between">
+            
+            
+            <div class="col-3">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo" class="img-fluid">
+                </a>
+            </div>
+
+            
+            <div class="col-5">
+                <div class="input-group rounded-pill border shadow-sm bg-white overflow-hidden">
+                    <span class="input-group-text bg-transparent border-0 ps-4 text-secondary opacity-75">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" class="form-control border-0 shadow-none bg-transparent text-secondary opacity-75" placeholder="Search for products">
+                </div>
+            </div>
+
+            
+            <div class="col-4 d-flex align-items-center justify-content-end gap-3">
+                
+                
+                <div class="position-relative">
+                    <a href="#" class="fs-4 text-decoration-none text-primary">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 10px;">0</span>
+                    </a>
+                </div>
+
+                
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle fw-bold border-0 shadow-none bg-transparent px-1 text-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        EN
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">العربية</a></li>
+                    </ul>
+                </div>
+
+                
+                <div>
+                    <a href="#" class="text-decoration-none d-flex align-items-center gap-1 text-primary">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="fw-semibold small">My Account</span>
+                    </a>
+                </div>
+
+                
+                <div class="d-flex align-items-center gap-2 ps-3">
+                    <i class="fa-solid fa-phone fs-3 text-primary"></i>
+                    <div class="d-flex flex-column lh-sm">
+                      <span class="fw-bold text-primary support-text">Sales & Service Support</span>
+                      <span class="fw-bold text-primary phone-number">021 3441122</span>  
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-custom-topbar text-white py-2 px-3">
+        <div class="container d-flex justify-content-center align-items-center gap-4">
+            <div class="small">
+                For better Shopping Experience, <strong>download the App Now!</strong>
+            </div>
+            <div class="d-flex align-items-center gap-3 small">
+                <span><i class="fa-brands fa-apple"></i> 4.6</span>
+                <span class="text-secondary opacity-50">|</span>
+                <span><i class="fa-brands fa-google-play"></i> 4.8</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-navbar p-0 shadow-sm" style="background: #0077B6;">
+    <div class="container">
+        
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarMenu">
+            
+            
+            <ul class="navbar-nav d-flex align-items-center gap-2 mb-2 mb-lg-0" style="font-size: 12px;">
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Home/Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../category page/category.html">Category Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../checkout/checkout.html">Checkout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../terms&condition/terms.html">Terms&Condition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../products/project.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Product Page/index.html">Product Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Shop by Brand/index.html">Shop by brands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../cart/cart.html">
+                        <i class="fa-solid fa-cart-shopping me-1"></i>Cart
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../Contact page/contact.html">
+                        <i class="fa-solid fa-envelope me-1"></i>Contact page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light px-2" href="../FAQS/faqs.html">
+                        <i class="fa-solid fa-clipboard-question me-1"></i>FAQS
+                    </a>
+                </li>
+            </ul>
+
+            
+            <div class="d-flex align-items-center gap-3">
+                <div class="vr bg-white opacity-50 mx-1" style="height: 20px;"></div>
+                <a href="../Shop by Brand/index.html" class="text-white text-decoration-none d-flex align-items-center gap-2 small fw-semibold">
+                    <i class="fa-solid fa-asterisk"></i> Shop By Brands
+                </a>
+                <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2 small fw-semibold">
+                    <i class="fa-solid fa-tag"></i> OFFERS
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container-fluid bg-checkout-gradient d-flex justify-content-center align-items-center text-white py-4">
+        <div class="text-center">
+            <h1 class="fw-bold m-0">Category - Medicines</h1>
+            <hr class="border-2 opacity-100 w-50 mx-auto mt-1 mb-0">
+        </div>
+    </div>
+
+    <div class="container py-2">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0" style="--bs-breadcrumb-divider: '>';">
+                <li class="breadcrumb-item"><a href="../Home/index.html" class="text-decoration-none text-muted">Home</a></li>
+                <li class="breadcrumb-item active text-primary fw-semibold" aria-current="page">Medicines</li>
+            </ol>
+        </nav>
+    </div>
+    <hr class="text-muted opacity-25 my-2 mx-auto" style="width: 82%;">
+
+    
+    <div class="container py-3">
+        <p class="text-secondary small lh-base mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+    
+    <hr class="text-muted opacity-25 my-2 mx-auto" style="width: 82%;">
+
+    
+    <div class="container py-4">
+        <div class="row">
+            
+            
+            <div class="col-lg-3 col-md-4 mb-4">
+              <div class="p-3 bg-white">
+                
+                <h5 class="fw-bold mb-3 text-secondary fs-5">Category</h5>
+                <ul class="list-unstyled mb-4 fs-6">
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-muted d-flex align-items-center category-link">
+                      <i class="fas fa-chevron-right fa-2xs me-2"></i> Beauty Care
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-muted d-flex align-items-center category-link">
+                      <i class="fas fa-chevron-right fa-2xs me-2"></i> Sports Nutrition
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-muted d-flex align-items-center category-link">
+                      <i class="fas fa-chevron-right fa-2xs me-2"></i> Nutrition & Supplements
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-muted d-flex align-items-center category-link">
+                      <i class="fas fa-chevron-right fa-2xs me-2"></i> Home Healthcare
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-muted d-flex align-items-center category-link">
+                      <i class="fas fa-chevron-right fa-2xs me-2"></i> Personal Care
+                    </a>
+                  </li>
+
+                  
+                  <li class="mb-2">
+                    <a href="#medicinesSubMenu" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="medicinesSubMenu" class="text-decoration-none text-primary fw-semibold d-flex align-items-center category-link">
+                      <i class="fas fa-chevron-down fa-2xs me-2"></i> Medicines
+                    </a>
+                    <div class="collapse show ps-3 mt-1" id="medicinesSubMenu">
+                      <ul class="list-unstyled d-flex flex-column gap-1 border-start border-2 ps-2 ms-1">
+                        <li><a href="#" class="text-decoration-none text-muted small d-block py-1">Self Medications</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted small d-block py-1">Kids & Infants Medications</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="mt-2">
+                    <a href="#" class="text-decoration-none text-muted d-flex align-items-center category-link">
+                      <i class="fas fa-chevron-right fa-2xs me-2"></i> Mother & Baby Care
+                    </a>
+                  </li>
+                </ul>
+
+                <hr class="text-muted opacity-25 my-3 mx-auto" style="width: 80%;">
+
+                
+                <h5 class="fw-bold mb-3 text-secondary fs-5">Brand</h5>
+                <div class="d-flex flex-column gap-2 fs-6">
+                  <div class="form-check">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="Abbott" id="brandAbbott">
+                    <label class="form-check-label text-muted" for="brandAbbott">Abbott</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="GSK" id="brandGSK">
+                    <label class="form-check-label text-muted" for="brandGSK">GSK</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="Getz" id="brandGetz" checked>
+                    <label class="form-check-label text-muted" for="brandGetz">Getz</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="Hemani" id="brandHemani">
+                    <label class="form-check-label text-muted" for="brandHemani">Hemani</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="Mothercare" id="brandMothercare">
+                    <label class="form-check-label text-muted" for="brandMothercare">Mothercare</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="Unilever" id="brandUnilever">
+                    <label class="form-check-label text-muted" for="brandUnilever">Unilever</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input brand-checkbox" type="checkbox" value="Hashmi" id="brandHashmi">
+                    <label class="form-check-label text-muted" for="brandHashmi">Hashmi</label>
+                  </div>
+                  
+                  
+                  <div class="mt-1">
+                    <a href="#" class="text-decoration-none text-primary fw-semibold small" id="seeAllBrands">See all</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-9 col-md-8">
+            
+              <div class="d-flex justify-content-end align-items-center mb-4 gap-2">
+                
+                <div class="dropdown">
+                  <button class="btn btn-outline-secondary dropdown-toggle text-secondary bg-white border-0 shadow-sm px-3 py-2" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Featured
+                  </button>
+                  <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="sortDropdown">
+                    <li><a class="dropdown-item active py-2" href="#" data-sort="featured">Featured</a></li>
+                    <li><a class="dropdown-item py-2" href="#" data-sort="newest">Newest</a></li>
+                    <li><a class="dropdown-item py-2" href="#" data-sort="most-rated">Most Rated</a></li>
+                    <li><a class="dropdown-item py-2" href="#" data-sort="low-to-high">Low to High</a></li>
+                  </ul>
+                </div>
+
+              
+                <div class="btn-group shadow-sm" role="group" aria-label="View toggle">
+                  <button type="button" class="btn btn-outline-secondary view-toggle active bg-white text-secondary px-3" id="gridViewBtn" data-view="grid">
+                    <i class="fas fa-th-large"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary view-toggle bg-white text-secondary px-3" id="listViewBtn" data-view="list">
+                    <i class="fas fa-list"></i>
+                  </button>
+                </div>
+              </div>
+
+              
+              <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow-sm p-3 bg-white rounded-4 h-100">
+                    <div class="text-center mb-3">
+                      <img src="img/product1.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="card-body p-0">
+                      <span class="text-primary small fw-semibold">Medicines</span>
+                      <h6 class="fw-bold text-dark mt-1 mb-2">Brufen 100mg / 5ml Syrup</h6>
+                      <p class="fw-bold text-dark mb-3">PKR 15.50</p>
+                      <button class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center py-2 add-to-cart-btn" onclick="addToCart()">
+                         <i class="fas fa-shopping-cart"></i>
+                             </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow-sm p-3 bg-white rounded-4 h-100">
+                    <div class="text-center mb-3">
+                      <img src="img/product2.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="card-body p-0">
+                      <span class="text-primary small fw-semibold">Medicines</span>
+                      <h6 class="fw-bold text-dark mt-1 mb-2">Brufen 100mg / 5ml Syrup</h6>
+                      <p class="fw-bold text-dark mb-3">PKR 15.50</p>
+                      <button class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center py-2 add-to-cart-btn" onclick="addToCart()">
+                         <i class="fas fa-shopping-cart"></i>
+                             </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow-sm p-3 bg-white rounded-4 h-100">
+                    <div class="text-center mb-3">
+                      <img src="img/product3.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="card-body p-0">
+                      <span class="text-primary small fw-semibold">Medicines</span>
+                      <h6 class="fw-bold text-dark mt-1 mb-2">Brufen 100mg / 5ml Syrup</h6>
+                      <p class="fw-bold text-dark mb-3">PKR 15.50</p>
+                      <button class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center py-2 add-to-cart-btn" onclick="addToCart()">
+                         <i class="fas fa-shopping-cart"></i>
+                             </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow-sm p-3 bg-white rounded-4 h-100">
+                    <div class="text-center mb-3">
+                      <img src="img/product4.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="card-body p-0">
+                      <span class="text-primary small fw-semibold">Medicines</span>
+                      <h6 class="fw-bold text-dark mt-1 mb-2">Brufen 100mg / 5ml Syrup</h6>
+                      <p class="fw-bold text-dark mb-3">PKR 15.50</p>
+                      <button class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center py-2 add-to-cart-btn" onclick="addToCart()">
+                         <i class="fas fa-shopping-cart"></i>
+                             </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="row g-4 mt-2">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow-sm p-3 bg-white rounded-4 h-100">
+                    <div class="text-center mb-3">
+                      <img src="img/product1.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="card-body p-0">
+                      <span class="text-primary small fw-semibold">Medicines</span>
+                      <h6 class="fw-bold text-dark mt-1 mb-2">Brufen 100mg / 5ml Syrup</h6>
+                      <p class="fw-bold text-dark mb-3">PKR 15.50</p>
+                     <button class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center py-2 add-to-cart-btn" onclick="addToCart()">
+                         <i class="fas fa-shopping-cart"></i>
+                             </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow-sm p-3 bg-white rounded-4 h-100">
+                    <div class="text-center mb-3">
+                      <img src="img/product2.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="card-body p-0">
+                      <span class="text-primary small fw-semibold">Medicines</span>
+                      <h6 class="fw-bold text-dark mt-1 mb-2">Brufen 100mg / 5ml Syrup</h6>
+                      <p class="fw-bold text-dark mb-3">PKR 15.50</p>
+                      <button class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center py-2 add-to-cart-btn" onclick="addToCart()">
+                         <i class="fas fa-shopping-cart"></i>
+                             </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow-sm p-3 bg-white rounded-4 h-100">
+                    <div class="text-center mb-3">
+                      <img src="img/product3.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="card-body p-0">
+                      <span class="text-primary small fw-semibold">Medicines</span>
+                      <h6 class="fw-bold text-dark mt-1 mb-2">Brufen 100mg / 5ml Syrup</h6>
+                      <p class="fw-bold text-dark mb-3">PKR 15.50</p>
+                     <button class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center py-2 add-to-cart-btn" onclick="addToCart()">
+                         <i class="fas fa-shopping-cart"></i>
+                             </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="card border-0 shadow-sm p-3 bg-white rounded-4 h-100">
+                    <div class="text-center mb-3">
+                      <img src="img/product4.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="card-body p-0">
+                      <span class="text-primary small fw-semibold">Medicines</span>
+                      <h6 class="fw-bold text-dark mt-1 mb-2">Brufen 100mg / 5ml Syrup</h6>
+                      <p class="fw-bold text-dark mb-3">PKR 15.50</p>
+                     <button class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center py-2 add-to-cart-btn" onclick="addToCart()">
+                         <i class="fas fa-shopping-cart"></i>
+                             </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+
+   <section class="footer1 py-5 position-relative ">
+  <div class="join bg-white shadow rounded-4 text-center pt-5 position-absolute  " style="max-width: 800px; height: 300px; margin-left: 30%;">
+    <h1>Join Our Newsletter</h1>
+    <P class="text-secondary mb-5 mt-5 ps-5 pe-5">Join over half a million vitamin lovers and get our latest deals,articles, and resources!</P>
+    <div class="d-flex justify-content-center">
+          <input type="email" class="form-control" placeholder="Enter your email" style="max-width: 300px;">
+          <button class="btn btn-primary px-4">Subscribe</button>
+        </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-info-subtle " style=" margin-top:12%; padding-top:9% ;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <p class=" mb-3">
+          SereneMeds - Corporate Office<br>
+          Marasi Dr - Business Bay<br>
+          Bay Square
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Who We Are</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">About SereneMeds</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Contact Us</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Latest News</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Store Locator</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Our Policies</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Refund Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Shipping Terms</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Privacy Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Useful Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Browse by Brand</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Browse by Category</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Offers / Coupons</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-column gap-2" style="width: 15%; padding-top: 3%;">
+        <a href="#" class="btn bg-dark text-white btn-sm">
+        <i class="fa-brands fa-google-play me-1"></i> Google Play </a>
+        <a href="#" class="btn bg-dark text-white btn-sm">
+          <i class="fa-brands fa-apple me-1"></i> App Store
+        </a>
+      </div>
+    </div>
+
+    <hr class="my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-body-secondary">
+      <p class="mb-2 mb-md-0"> 2025 SereneMeds. All Rights Reserved.</p>
+      <div class="d-flex gap-2">
+        <i class="fa-brands fa-cc-visa fs-1"></i>
+        <i class="fa-brands fa-cc-mastercard fs-1"></i>
+        <i class="fa-brands fa-cc-paypal fs-1"></i>
+      </div>
+    </div>
+  </div>
+</footer> 
+
+    <!-- Bootstrap 5.3.8 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

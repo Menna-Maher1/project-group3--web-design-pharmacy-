@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - SereneMeds</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+<script src="contact.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container d-flex align-items-center justify-content-between py-3 flex-wrap gap-3">
+    <a href="index.html" class="logo d-flex align-items-center gap-2 text-decoration-none">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <span><strong>SERENE</strong>MEDS</span>
+    </a>
+
+    <div class="header-search flex-grow-1">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search for products">
+    </div>
+
+    <div class="d-flex align-items-center gap-4 header-actions">
+      <div class="dropdown-lang">
+        EN <i class="fa-solid fa-chevron-down ms-1"></i>
+      </div>
+      <a href="#" class="text-decoration-none header-link">
+        <i class="fa-regular fa-user"></i> My Account
+      </a>
+      <a href="#" class="text-decoration-none header-link support-link">
+        <i class="fa-solid fa-headset"></i>
+        <span>
+          <small>Sales &amp; Service Support</small>
+          <strong>021 3441122</strong>
+        </span>
+      </a>
+      <a href="#" class="cart-link">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-dot"></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="topbar">
+  <div class="container d-flex justify-content-center align-items-center text-center">
+    <span>For a better shopping experience, download the app now!</span>
+    <span class="store-badges ms-2">
+      <a href="#"><i class="fa-brands fa-apple"></i></a>
+      <a href="#"><i class="fa-brands fa-google-play"></i></a>
+    </span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg main-navbar p-0" style="background: #0077B6;">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mx-auto d-flex justify-content-between gap-2" style="font-size: 12px; padding: 5px 10px;">
+        <li class="nav-item"> <a class="nav-link text-light" href="../Home/Home.html">Home</a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../category page/category.html">Category Page</a> </li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../checkout/checkout.html">Checkout</a> </li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../terms&condition/terms.html">Terms&Condition</a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../products/project.html">Products</a> </li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../Product Page/index.html">Product Page </a> </li>
+        <li class="nav-item border-end border-secondary"> <a class="nav-link text-light" href="../Shop by Brand/index.html">Shop by brands </a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../cart/cart.html"> <i class="fa-solid fa-cart-shopping pe-2"></i>Cart</a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../Contact page/contact.html"> <i class="fa-solid fa-envelope pe-2"></i>Contact page </a></li>
+        <li class="nav-item"> <a class="nav-link text-light" href="../FAQS/faqs.html"> <i class="fa-solid fa-clipboard-question pe-2"></i>FAQS </a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <h1>FAQs</h1>
+  <div class="rule"></div>
+</section>
+
+<div class="container">
+  <div class="breadcrumb-row">
+    <a href="index.html">Home</a> <span class="mx-1">&gt;</span> <span>Contact us</span>
+  </div>
+
+  <div class="contact-form-wrap mt-4 pt-3">
+    <form id="contactForm">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+            <label for="fullName">Full Name</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="subject" placeholder="Subject">
+            <label for="subject">Subject</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <textarea class="form-control" id="message" placeholder="Message" style="height: 160px" required></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-submit">Submit Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="contact-info-wrap">
+    <h2 class="text-center">Contact Information</h2>
+
+    <div class="row align-items-center g-4 mt-1">
+      <div class="col-lg-7">
+        <div class="map-frame">
+          <img src="image/image1.jpeg" alt="SereneMeds location map" class="w-100" style="display:block;">
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <ul class="contact-details list-unstyled">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>16610 Dallas Pkwy, Dallas, TX 75248, USA</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@serenemeds.com</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>(972) 532-7473</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="footer1 py-5 position-relative ">
+  <div class="join bg-white shadow rounded-4 text-center pt-5 position-absolute  " style="max-width: 800px; height: 300px; margin-left: 30%;">
+    <h1>Join Our Newsletter</h1>
+    <P class="text-secondary mb-5 mt-5 ps-5 pe-5">Join over half a million vitamin lovers and get our latest deals,articles, and resources!</P>
+    <div class="d-flex justify-content-center">
+          <input type="email" class="form-control" placeholder="Enter your email" style="max-width: 300px;">
+          <button class="btn btn-primary px-4">Subscribe</button>
+        </div>
+  </div>
+</section>
+
+
+<footer class="bg-info-subtle " style=" margin-top:12%; padding-top:9% ;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <p class=" mb-3">
+          SereneMeds - Corporate Office<br>
+          Marasi Dr - Business Bay<br>
+          Bay Square
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Who We Are</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">About SereneMeds</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Contact Us</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Latest News</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Store Locator</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Our Policies</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Refund Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Shipping Terms</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Privacy Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3 fs-5">Useful Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Browse by Brand</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Browse by Category</a></li>
+          <li class="mb-2"><a href="#" class="text-body-secondary text-decoration-none">Offers / Coupons</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-column gap-2" style="width: 15%; padding-top: 3%;">
+        <a href="#" class="btn bg-dark text-white btn-sm">
+        <i class="fa-brands fa-google-play me-1"></i> Google Play </a>
+        <a href="#" class="btn bg-dark text-white btn-sm">
+          <i class="fa-brands fa-apple me-1"></i> App Store
+        </a>
+      </div>
+    </div>
+
+    <hr class="my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-body-secondary">
+      <p class="mb-2 mb-md-0">© 2025 SereneMeds. All Rights Reserved.</p>
+      <div class="d-flex gap-2">
+        <i class="fa-brands fa-cc-visa fs-1"></i>
+        <i class="fa-brands fa-cc-mastercard fs-1"></i>
+        <i class="fa-brands fa-cc-paypal fs-1"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
