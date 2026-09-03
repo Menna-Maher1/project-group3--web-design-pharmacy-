@@ -45,3 +45,23 @@ addCartBtns.forEach(function (btn) {
     });
 
 });
+
+
+let emailValidation = (element) => {
+    if (element.value.includes("@")) {
+        console.log("Valid Email");
+    } else {
+        console.log("Invalid Email");
+    }
+};
+let myForm = document.getElementById("myForm");
+
+myForm.addEventListener("input", (e) => {
+    if (e.target.id == "userEmail") {
+        emailValidation(e.target);
+    }
+});
+var subscribeBtn = document.getElementById("subscribeBtn");
+subscribeBtn.addEventListener("click",()=>{
+    alert("done")
+})
