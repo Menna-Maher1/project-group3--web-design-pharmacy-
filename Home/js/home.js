@@ -1,10 +1,8 @@
 // cart
-
 let cartCount = document.getElementById("cartCount");
 
 // Get cart count from Local Storage
 let cartItems = parseInt(localStorage.getItem("cartItems")) || 0;
-
 
 
 const updateCartCount = () => {
@@ -28,76 +26,83 @@ const updateCartCount = () => {
 };
 
 
-// Update cart count when page loads
+// update count when refresh 
 updateCartCount();
 
-
-
-// =========================================
-// ADD TO CART
-// =========================================
-
+//add cart
 $(document).on("click", ".cart-btn, .category-cart-btn", function () {
-
-    // Increase cart count
+    // Inc count
     cartItems++;
-
-
-    // Save cart count in Local Storage
+    // save count storage
     localStorage.setItem("cartItems", cartItems);
-
-
-    // Update cart count
     updateCartCount();
-
-
-    // Change button state
+    // change btn whin click
     $(this).addClass("cart-added");
-
     $(this).html(
         '<i class="fa-solid fa-check"></i>'
     );
 
-
-    // Save clicked button
     let button = $(this);
 
-
-    // Return cart icon after 1 second
     setTimeout(() => {
-
         button.html(
             '<i class="fa-solid fa-cart-shopping"></i>'
         );
-
     }, 1000);
 
 });
 
 
-
-// =========================================
-// DOCUMENT READY
-// =========================================
-
 $(document).ready(() => {
 
-
-    // =========================================
-    // SEC3 OWL CAROUSEL
-    // =========================================
-
+    // sec3 slider
     $(".sec3-carousel").owlCarousel({
 
         items: 6,
-
         margin: 12,
+        nav: true,
+        loop: true,
+        dots: true,
+        navText: [
+
+            '<i class="fa-solid fa-chevron-left"></i>',
+
+            '<i class="fa-solid fa-chevron-right"></i>'
+
+        ],
+
+        responsive: {
+            0: {
+                items: 2
+            },
+            576: {
+                items: 3
+            },
+            768: {
+                items: 4
+            },
+            992: {
+                items: 6
+            }
+        }
+
+    });
+
+    // sec5
+
+    $(".brands-carousel").owlCarousel({
+
+        items: 7,
+
+        margin: 10,
 
         nav: true,
 
         loop: true,
 
-        dots: true,
+        dots: false,
+
+        autoplay: false,
 
         navText: [
 
@@ -118,33 +123,24 @@ $(document).ready(() => {
             },
 
             768: {
-                items: 4
+                items: 5
             },
 
             992: {
-                items: 6
+                items: 7
             }
 
         }
 
     });
 
-
-
-    // =========================================
-    // SEC9 OWL CAROUSEL
-    // =========================================
-
+    // sec9 slider
     $(".sec9-carousel").owlCarousel({
 
         items: 6,
-
         margin: 8,
-
         nav: true,
-
         loop: true,
-
         dots: false,
 
         navText: [
@@ -178,10 +174,7 @@ $(document).ready(() => {
     });
 
 
-
-    // =========================================
-    // SEC11 ARTICLES SLIDER
-    // =========================================
+    // sec11 slider
 
     let sec11Carousel = $(".sec11-carousel").owlCarousel({
 
@@ -218,25 +211,11 @@ $(document).ready(() => {
         }
 
     });
-
-
-
-    // =========================================
-    // SEC11 PREVIOUS BUTTON
-    // =========================================
-
     $(".sec11-prev").click(() => {
 
         sec11Carousel.trigger("prev.owl.carousel");
 
     });
-
-
-
-    // =========================================
-    // SEC11 NEXT BUTTON
-    // =========================================
-
     $(".sec11-next").click(() => {
 
         sec11Carousel.trigger("next.owl.carousel");
@@ -247,12 +226,9 @@ $(document).ready(() => {
 
 
 
-// =========================================
-// SEC9 TIMER
-// =========================================
+// sec9 timer
 
 let timer = 14 * 60 + 49;
-
 let timerElement =
     document.getElementById("sec9Timer");
 let countdown = setInterval(() => {
