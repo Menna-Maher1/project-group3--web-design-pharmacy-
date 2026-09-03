@@ -62,6 +62,12 @@ myForm.addEventListener("input", (e) => {
     }
 });
 var subscribeBtn = document.getElementById("subscribeBtn");
+var userEmail = document.getElementById("userEmail");
 subscribeBtn.addEventListener("click",()=>{
-    alert("done")
-})
+    if(userEmail.value.trim()===""){
+    alert("please enter your email");
+}
+    else{
+        alert("done");
+    }
+});
