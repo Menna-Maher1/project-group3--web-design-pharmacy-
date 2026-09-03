@@ -11,22 +11,16 @@
 
 #cartCount {
     position: absolute;
-
     top: -8px;
     right: -8px;
-
     width: 18px;
     height: 18px;
-
     background-color: #0b3558;
     color: white;
-
     border-radius: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 10px;
 }
 
@@ -56,58 +50,4 @@
 
 .sub-category p {
     margin: 8px 0;
-}
-/* =========================
-   TABLET / IPAD
-========================= */
-
-@media (min-width: 601px) and (max-width: 1024px) {
-
-    .container-cards {
-        width: 90% ;
-        margin-left: 5% ;
-        margin-top: 0 ;
-        overflow: auto;
-    }
-
-    .cards {
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    }
-
-    .cards .card {
-        width: 45% ;
-    }
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-    .container-cards {
-        width: 95% ;
-        margin-left: auto ;
-        margin-right: auto ;
-        margin-top: 0 ;
-        overflow: auto;
-    }
-
-    .cards {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .cards .card {
-        width: 100%;
-    }
-
-    .join {
-        width: 90% ;
-        height: auto ;
-        margin-left: 5% ;
-    }
 }
